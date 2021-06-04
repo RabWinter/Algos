@@ -1545,3 +1545,13 @@ function solution(str, ending) {
 }
 
 solution('abc', 'bc');
+
+///////////////////////////////////////////////
+
+function noOdds(values) {
+  // const evens = values.map(n => n % 2 === 0);
+  const evens = values.filter(n => n % 2 === 0);
+  console.log(evens);
+}
+
+noOdds([0, 1, 2, 3]);
