@@ -1555,3 +1555,24 @@ function noOdds(values) {
 noOdds([0, 1, 2, 3]);
 
 /////////////////////////////////////////////
+
+function lastSurvivor(letters, coords) {
+  letters = letters.split('');
+
+  for (let i = 0; i < coords.length; i++) {
+    letters.splice(coords[i], 1);
+  }
+  console.log(letters.join(''));
+}
+
+lastSurvivor('zbk', [2, 1]);
+
+// letters = letters.split('');
+
+// for (let i = 0; i <= coords.length - 1; i++) {
+//   letters.splice(coords[i], 1);
+// }
+// return letters[0];
+
+// const words = ['a', 'b', 'c'];
+// console.log(words.splice(0, 1));
